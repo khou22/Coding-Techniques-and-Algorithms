@@ -1,4 +1,5 @@
 var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Data set
+a = [ 81, 97, 90, 13, 83, 28, 34, 49, 79, 92, 32, 50 ]
 var k = 5; // Fifth lowest number
 
 // Shuffle array
