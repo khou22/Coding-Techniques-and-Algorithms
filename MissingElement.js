@@ -22,3 +22,5 @@ var missingNumber = actualSum - sum;
 
 console.log("Missing number: " + missingNumber);
 console.log("Performance: linear time");
+
+// Challenge: Two numbers missing
