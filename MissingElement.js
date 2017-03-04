@@ -24,3 +24,4 @@ console.log("Missing number: " + missingNumber);
 console.log("Performance: linear time");
 
 // Challenge: Two numbers missing
+// Find best performance solution
