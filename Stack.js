@@ -33,7 +33,7 @@ class Stack {
     }
 
     // Enqueue the item
-    enqueue(item) {
+    push(item) {
         this.resizeArray(); // Check resize
 
         this.size++; // Increment size
@@ -41,12 +41,12 @@ class Stack {
     }
 
     // Dequeue the last item added
-    dequeue() {
-        if (this.size <= 0) { // If no items to dequeue
+    pop() {
+        if (this.size <= 0) { // If no items to pop
             return null;
         }
 
-        var toDequeue = this.a[this.size]; // Save item to dequeue
+        var toDequeue = this.a[this.size]; // Save item to pop
         this.size += -1; // Decrease size
         this.resizeArray(); // Check resize
 
@@ -66,22 +66,22 @@ class Stack {
 // ***************   Unit testing   ***************
 var testStack = new Stack();
 
-testStack.enqueue("One");
-testStack.enqueue("Two");
-testStack.enqueue("Three");
+testStack.push("One");
+testStack.push("Two");
+testStack.push("Three");
 
-console.log(testStack.dequeue()); // Three
+console.log(testStack.pop()); // Three
 console.log(testStack.peak()); // Two
-console.log(testStack.dequeue()); // Two
+console.log(testStack.pop()); // Two
 
-testStack.enqueue("Four");
-testStack.enqueue("Five");
+testStack.push("Four");
+testStack.push("Five");
 
 console.log(testStack.peak()); // Five
-console.log(testStack.dequeue()); // Five
-console.log(testStack.dequeue()); // Four
+console.log(testStack.pop()); // Five
+console.log(testStack.pop()); // Four
 
 console.log(testStack.getSize()); // 1
-console.log(testStack.dequeue()); // One
+console.log(testStack.pop()); // One
 
-console.log(testStack.dequeue()); // Null
+console.log(testStack.pop()); // Null
