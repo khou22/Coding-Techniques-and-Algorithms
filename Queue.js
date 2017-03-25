@@ -7,6 +7,9 @@ class Node {
 
 class Queue {
 
+  // Instance variables:
+  // Head, tail, size
+
   constructor() {
     this.head = null; // No initial
     this.tail = null; // No initial
