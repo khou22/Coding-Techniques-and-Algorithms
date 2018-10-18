@@ -1,0 +1,13 @@
+q = queue
+
+q.enque(head)
+
+while !q.is_empty:
+	node = q.deque()
+
+	# Perform action on node
+	# ...
+
+	for child in node.children:
+		if child not in q:
+			q.enque(child)
